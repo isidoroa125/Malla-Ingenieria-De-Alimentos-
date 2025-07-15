@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular - Ingeniería de Alimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Malla Curricular</h1>
+        <h2>Ingeniería de Alimentos</h2>
+    </header>
+
+    <main class="curriculum-grid">
+        <section class="semester" id="semester1">
+            <h3>I Semestre</h3>
+            <div class="course" data-id="intro_ing_alimentos" data-unlocks="topicos_ing_alimentos">
+                <input type="checkbox" id="check_intro_ing_alimentos">
+                <label for="check_intro_ing_alimentos">Introducción a la ingeniería de alimentos</label>
+            </div>
+            <div class="course" data-id="fundamentos_matematicas" data-unlocks="algebra_lineal,calculo">
+                <input type="checkbox" id="check_fundamentos_matematicas">
+                <label for="check_fundamentos_matematicas">Fundamentos de matemáticas</label>
+            </div>
+            <div class="course" data-id="estadisticas_descriptiva">
+                <input type="checkbox" id="check_estadisticas_descriptiva">
+                <label for="check_estadisticas_descriptiva">Estadísticas descriptiva y probabilidades</label>
+            </div>
+            <div class="course" data-id="quimica_general" data-unlocks="analisis_quimico,quimica_organica">
+                <input type="checkbox" id="check_quimica_general">
+                <label for="check_quimica_general">Química general</label>
+            </div>
+            <div class="course" data-id="desarrollo_habilidades">
+                <input type="checkbox" id="check_desarrollo_habilidades">
+                <label for="check_desarrollo_habilidades">Desarrollo de habilidades para ingenieros</label>
+            </div>
+            <div class="course" data-id="ingles_i" data-unlocks="ingles_ii">
+                <input type="checkbox" id="check_ingles_i">
+                <label for="check_ingles_i">Inglés I</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester2">
+            <h3>II Semestre</h3>
+            <div class="course" data-id="topicos_ing_alimentos" data-prerequisites="intro_ing_alimentos" data-unlocks="propiedades_fisicas_alimentos">
+                <input type="checkbox" id="check_topicos_ing_alimentos">
+                <label for="check_topicos_ing_alimentos">Topicos de ingenieria de alimentos</label>
+            </div>
+            <div class="course" data-id="calculo" data-prerequisites="fundamentos_matematicas" data-unlocks="calculo_avanzado,introduccion_economia">
+                <input type="checkbox" id="check_calculo">
+                <label for="check_calculo">Cálculo</label>
+            </div>
+            <div class="course" data-id="algebra_lineal" data-prerequisites="fundamentos_matematicas">
+                <input type="checkbox" id="check_algebra_lineal">
+                <label for="check_algebra_lineal">Algebra lineal</label>
+            </div>
+            <div class="course" data-id="fisica_i" data-unlocks="fisica_ii">
+                <input type="checkbox" id="check_fisica_i">
+                <label for="check_fisica_i">Física I</label>
+            </div>
+            <div class="course" data-id="biologia">
+                <input type="checkbox" id="check_biologia">
+                <label for="check_biologia">Biología</label>
+            </div>
+            <div class="course" data-id="ingles_ii" data-prerequisites="ingles_i" data-unlocks="ingles_iii">
+                <input type="checkbox" id="check_ingles_ii">
+                <label for="check_ingles_ii">Inglés II</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester3">
+            <h3>III Semestre</h3>
+            <div class="course" data-id="propiedades_fisicas_alimentos" data-prerequisites="topicos_ing_alimentos" data-unlocks="termodinamica">
+                <input type="checkbox" id="check_propiedades_fisicas_alimentos">
+                <label for="check_propiedades_fisicas_alimentos">Propiedades físicas de los alimentos</label>
+            </div>
+            <div class="course" data-id="calculo_avanzado" data-prerequisites="calculo" data-unlocks="ecuaciones_diferenciales,computacion_aplicada">
+                <input type="checkbox" id="check_calculo_avanzado">
+                <label for="check_calculo_avanzado">Cálculo avanzado</label>
+            </div>
+            <div class="course" data-id="fisica_ii" data-prerequisites="fisica_i">
+                <input type="checkbox" id="check_fisica_ii">
+                <label for="check_fisica_ii">Física II</label>
+            </div>
+            <div class="course" data-id="analisis_quimico" data-prerequisites="quimica_general" data-unlocks="quimica_analisis_alimentos">
+                <input type="checkbox" id="check_analisis_quimico">
+                <label for="check_analisis_quimico">Análisis químico e instrumental</label>
+            </div>
+            <div class="course" data-id="quimica_organica" data-prerequisites="quimica_general" data-unlocks="bioquimica_alimentos_i">
+                <input type="checkbox" id="check_quimica_organica">
+                <label for="check_quimica_organica">Química orgánica</label>
+            </div>
+            <div class="course" data-id="ingles_iii" data-prerequisites="ingles_ii" data-unlocks="ingles_iv">
+                <input type="checkbox" id="check_ingles_iii">
+                <label for="check_ingles_iii">Inglés III</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester4">
+            <h3>IV Semestre</h3>
+            <div class="course" data-id="termodinamica" data-prerequisites="propiedades_fisicas_alimentos" data-unlocks="ingenieria_alimentos_i">
+                <input type="checkbox" id="check_termodinamica">
+                <label for="check_termodinamica">Termodinámica</label>
+            </div>
+            <div class="course" data-id="bioquimica_alimentos_i" data-prerequisites="quimica_organica" data-unlocks="bioquimica_alimentos_ii,microbiologia_alimentos_i,control_calidad">
+                <input type="checkbox" id="check_bioquimica_alimentos_i">
+                <label for="check_bioquimica_alimentos_i">Bioquimica de alimentos I</label>
+            </div>
+            <div class="course" data-id="ecuaciones_diferenciales" data-prerequisites="calculo_avanzado">
+                <input type="checkbox" id="check_ecuaciones_diferenciales">
+                <label for="check_ecuaciones_diferenciales">Ecuaciones diferenciales</label>
+            </div>
+            <div class="course" data-id="introduccion_economia" data-prerequisites="calculo" data-unlocks="investigacion_operaciones">
+                <input type="checkbox" id="check_introduccion_economia">
+                <label for="check_introduccion_economia">Introducción a la economía</label>
+            </div>
+            <div class="course" data-id="computacion_aplicada" data-prerequisites="calculo_avanzado" data-unlocks="control_calidad">
+                <input type="checkbox" id="check_computacion_aplicada">
+                <label for="check_computacion_aplicada">Computación aplicada para la ingeniería</label>
+            </div>
+            <div class="course" data-id="ingles_iv" data-prerequisites="ingles_iii">
+                <input type="checkbox" id="check_ingles_iv">
+                <label for="check_ingles_iv">Inglés IV</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester5">
+            <h3>V Semestre</h3>
+            <div class="course" data-id="ingenieria_alimentos_i" data-prerequisites="termodinamica" data-unlocks="ingenieria_alimentos_ii">
+                <input type="checkbox" id="check_ingenieria_alimentos_i">
+                <label for="check_ingenieria_alimentos_i">Ingeniería en alimentos I</label>
+            </div>
+            <div class="course" data-id="quimica_analisis_alimentos" data-prerequisites="analisis_quimico" data-unlocks="analisis_sensorial_alimentos">
+                <input type="checkbox" id="check_quimica_analisis_alimentos">
+                <label for="check_quimica_analisis_alimentos">Quimica y analisis de alimentos</label>
+            </div>
+            <div class="course" data-id="bioquimica_alimentos_ii" data-prerequisites="bioquimica_alimentos_i" data-unlocks="procesamiento_hortofruticolas">
+                <input type="checkbox" id="check_bioquimica_alimentos_ii">
+                <label for="check_bioquimica_alimentos_ii">Bioquimica de alimentos II</label>
+            </div>
+            <div class="course" data-id="microbiologia_alimentos_i" data-prerequisites="bioquimica_alimentos_i" data-unlocks="microbiologia_alimentos_ii">
+                <input type="checkbox" id="check_microbiologia_alimentos_i">
+                <label for="check_microbiologia_alimentos_i">Microbiología de alimentos I</label>
+            </div>
+            <div class="course" data-id="investigacion_operaciones" data-prerequisites="introduccion_economia" data-unlocks="liderazgo_capital_humano,logistica_procesos_productos">
+                <input type="checkbox" id="check_investigacion_operaciones">
+                <label for="check_investigacion_operaciones">Investigación de operaciones</label>
+            </div>
+            <div class="course" data-id="control_calidad" data-prerequisites="bioquimica_alimentos_i,computacion_aplicada" data-unlocks="procesamiento_pecuarios,sistema_gestion_calidad_inocuidad">
+                <input type="checkbox" id="check_control_calidad">
+                <label for="check_control_calidad">Control de calidad</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester6">
+            <h3>VI Semestre</h3>
+            <div class="course" data-id="ingenieria_alimentos_ii" data-prerequisites="ingenieria_alimentos_i" data-unlocks="fundamentos_procesamiento_alimentos_i">
+                <input type="checkbox" id="check_ingenieria_alimentos_ii">
+                <label for="check_ingenieria_alimentos_ii">Ingeniería de alimentos II</label>
+            </div>
+            <div class="course" data-id="microbiologia_alimentos_ii" data-prerequisites="microbiologia_alimentos_i" data-unlocks="toxicologia_alimentaria">
+                <input type="checkbox" id="check_microbiologia_alimentos_ii">
+                <label for="check_microbiologia_alimentos_ii">Microbiología de alimentos II</label>
+            </div>
+            <div class="course" data-id="analisis_sensorial_alimentos" data-prerequisites="quimica_analisis_alimentos" data-unlocks="envase_alimentos">
+                <input type="checkbox" id="check_analisis_sensorial_alimentos">
+                <label for="check_analisis_sensorial_alimentos">Análisis sensorial de alimentos</label>
+            </div>
+            <div class="course" data-id="liderazgo_capital_humano" data-prerequisites="investigacion_operaciones">
+                <input type="checkbox" id="check_liderazgo_capital_humano">
+                <label for="check_liderazgo_capital_humano">Liderazgo y Capital humano</label>
+            </div>
+            <div class="course" data-id="logistica_procesos_productos" data-prerequisites="investigacion_operaciones" data-unlocks="contabilidad_costos,gestion_retail_alimentario">
+                <input type="checkbox" id="check_logistica_procesos_productos">
+                <label for="check_logistica_procesos_productos">Logística de procesos y productos</label>
+            </div>
+            <div class="course" data-id="induccion_laboral" data-prerequisites-semesters="semester1,semester2,semester3,semester4,semester5">
+                <input type="checkbox" id="check_induccion_laboral">
+                <label for="check_induccion_laboral">Inducción laboral</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester7">
+            <h3>VII Semestre</h3>
+            <div class="course" data-id="fundamentos_procesamiento_alimentos_i" data-prerequisites="ingenieria_alimentos_ii" data-unlocks="fundamentos_procesamiento_alimentos_ii,ingenieria_bioprocesos">
+                <input type="checkbox" id="check_fundamentos_procesamiento_alimentos_i">
+                <label for="check_fundamentos_procesamiento_alimentos_i">Fundamentos de procesamientos de los alimentos I</label>
+            </div>
+            <div class="course" data-id="procesamiento_hortofruticolas" data-prerequisites="bioquimica_alimentos_ii">
+                <input type="checkbox" id="check_procesamiento_hortofruticolas">
+                <label for="check_procesamiento_hortofruticolas">Procesamiento de productos hortofrutícolas</label>
+            </div>
+            <div class="course" data-id="procesamiento_pecuarios" data-prerequisites="control_calidad">
+                <input type="checkbox" id="check_procesamiento_pecuarios">
+                <label for="check_procesamiento_pecuarios">Procesamiento de productos pecuarios</label>
+            </div>
+            <div class="course" data-id="envase_alimentos" data-prerequisites="analisis_sensorial_alimentos" data-unlocks="ingenieria_bioprocesos,desarrollo_productos_alimentarios">
+                <input type="checkbox" id="check_envase_alimentos">
+                <label for="check_envase_alimentos">Envases de alimentos</label>
+            </div>
+            <div class="course" data-id="contabilidad_costos" data-prerequisites="logistica_procesos_productos" data-unlocks="gestion_produccion_organizacion,innovacion_emprendimiento">
+                <input type="checkbox" id="check_contabilidad_costos">
+                <label for="check_contabilidad_costos">Contabilidad y costos</label>
+            </div>
+            <div class="course" data-id="toxicologia_alimentaria" data-prerequisites="microbiologia_alimentos_ii" data-unlocks="sistema_gestion_calidad_inocuidad,nutricion">
+                <input type="checkbox" id="check_toxicologia_alimentaria">
+                <label for="check_toxicologia_alimentaria">Toxicología alimentaria</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester8">
+            <h3>VIII Semestre</h3>
+            <div class="course" data-id="fundamentos_procesamiento_alimentos_ii" data-prerequisites="ingenieria_alimentos_ii">
+                <input type="checkbox" id="check_fundamentos_procesamiento_alimentos_ii">
+                <label for="check_fundamentos_procesamiento_alimentos_ii">Fundamentos de procesamiento de los alimentos II</label>
+            </div>
+            <div class="course" data-id="ingenieria_bioprocesos" data-prerequisites="fundamentos_procesamiento_alimentos_i,envase_alimentos" data-unlocks="evaluacion_formulacion_proyectos">
+                <input type="checkbox" id="check_ingenieria_bioprocesos">
+                <label for="check_ingenieria_bioprocesos">Ingeniería de bioprocesos</label>
+            </div>
+            <div class="course" data-id="desarrollo_productos_alimentarios" data-prerequisites="envase_alimentos">
+                <input type="checkbox" id="check_desarrollo_productos_alimentarios">
+                <label for="check_desarrollo_productos_alimentarios">Desarrollo de productos alimentarios</label>
+            </div>
+            <div class="course" data-id="sistema_gestion_calidad_inocuidad" data-prerequisites="control_calidad,toxicologia_alimentaria" data-unlocks="aseguramiento_calidad_alimentaria">
+                <input type="checkbox" id="check_sistema_gestion_calidad_inocuidad">
+                <label for="check_sistema_gestion_calidad_inocuidad">Sistema de gestión de calidad e inocuidad alimentaria</label>
+            </div>
+            <div class="course" data-id="gestion_produccion_organizacion" data-prerequisites="contabilidad_costos">
+                <input type="checkbox" id="check_gestion_produccion_organizacion">
+                <label for="check_gestion_produccion_organizacion">Gestión de la producción y la organización</label>
+            </div>
+            <div class="course" data-id="gestion_retail_alimentario" data-prerequisites="logistica_procesos_productos">
+                <input type="checkbox" id="check_gestion_retail_alimentario">
+                <label for="check_gestion_retail_alimentario">Gestión de retail alimentario</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester9">
+            <h3>IX Semestre</h3>
+            <div class="course" data-id="evaluacion_formulacion_proyectos" data-prerequisites="ingenieria_bioprocesos">
+                <input type="checkbox" id="check_evaluacion_formulacion_proyectos">
+                <label for="check_evaluacion_formulacion_proyectos">Evaluacion y formulacion de proyectos</label>
+            </div>
+            <div class="course" data-id="aseguramiento_calidad_alimentaria" data-prerequisites="sistema_gestion_calidad_inocuidad">
+                <input type="checkbox" id="check_aseguramiento_calidad_alimentaria">
+                <label for="check_aseguramiento_calidad_alimentaria">Aseguramiento de la calidad alimentaria</label>
+            </div>
+            <div class="course" data-id="electivo_especializacion_i" data-prerequisites-semesters="semester1,semester2,semester3,semester4,semester5,semester6,semester7,semester8" data-unlocks="electivo_especializacion_ii">
+                <input type="checkbox" id="check_electivo_especializacion_i">
+                <label for="check_electivo_especializacion_i">Electivo de especialización I</label>
+            </div>
+            <div class="course" data-id="trabajo_titulacion_i" data-prerequisites-semesters="semester1,semester2,semester3,semester4,semester5,semester6,semester7,semester8" data-unlocks="trabajo_titulacion_ii">
+                <input type="checkbox" id="check_trabajo_titulacion_i">
+                <label for="check_trabajo_titulacion_i">Trabajo de titulación I</label>
+            </div>
+            <div class="course" data-id="innovacion_emprendimiento" data-prerequisites="contabilidad_costos">
+                <input type="checkbox" id="check_innovacion_emprendimiento">
+                <label for="check_innovacion_emprendimiento">Innovación y emprendimiento</label>
+            </div>
+            <div class="course" data-id="nutricion" data-prerequisites="toxicologia_alimentaria">
+                <input type="checkbox" id="check_nutricion">
+                <label for="check_nutricion">Nutrición</label>
+            </div>
+        </section>
+
+        <section class="semester" id="semester10">
+            <h3>X Semestre</h3>
+            <div class="course" data-id="practica_profesional" data-prerequisites-semesters="semester1,semester2,semester3,semester4,semester5,semester6,semester7,semester8,semester9">
+                <input type="checkbox" id="check_practica_profesional">
+                <label for="check_practica_profesional">Práctica profesional</label>
+            </div>
+            <div class="course" data-id="electivo_especializacion_ii" data-prerequisites="electivo_especializacion_i">
+                <input type="checkbox" id="check_electivo_especializacion_ii">
+                <label for="check_electivo_especializacion_ii">Electivo de especialización II</label>
+            </div>
+            <div class="course" data-id="trabajo_titulacion_ii" data-prerequisites="trabajo_titulacion_i">
+                <input type="checkbox" id="check_trabajo_titulacion_ii">
+                <label for="check_trabajo_titulacion_ii">Trabajo de titulación II</label>
+            </div>
+        </section>
+    </main>
+
+    <button class="reset-button" id="resetCurriculum">Reiniciar Malla</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
